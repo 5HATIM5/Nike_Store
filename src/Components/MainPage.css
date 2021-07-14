@@ -43,7 +43,7 @@
     border-left-color: var(--gray);
   
 }   
-.mainPage_radial > img{
+.Nike_img{
     margin-bottom: 65px;
     margin-left: 60px;
     filter: drop-shadow(20px 25px 20px var(--black));
@@ -64,7 +64,14 @@
     border-color: #fff;
     border-style: solid;
     border-radius: 30px;
+    cursor: pointer;
 
+}
+
+.button_Shopnow:hover{
+    background-color: var(--offwhite);
+    color: var(--black);
+    transition: 500ms ease-out;
 }
 
 .mainPage_content{
@@ -121,14 +128,57 @@
     }
 }
 /* Generating the responsiveness on small screens */
-@media(max-width:1000px){
+@media(max-width:768px){
 
     .mainPage{
         background: rgb(0,0,0);
         background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(239,239,239,1) 0%);
+        overflow-x: hidden;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .content_Matter{
+        display: none;
+    }
+    .mainPage_radial{
+        height: 38vh;
+        width: 38vh;
+    
+    }   
+    .radial{
+        height: 45vh;
+        width: 45vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+      
+    }   
+    .Nike_img{
+      width: 400px;
+      object-fit: contain;
+    
+      
+    
     }
     .mainPage_content{
-        display: none;
+        flex: 1;
+        margin: 0;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .content_Tagline{
+        font-size: 10px;
+        margin: 0;
+
+    }
+    .content_Heading{
+        font-size: 70px;
+        margin: 0;
+    }
+    .button_Shopnow{
+        margin-top: 5px;
     }
    
 }

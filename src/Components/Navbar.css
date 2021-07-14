@@ -5,13 +5,24 @@
     --black: #000000;
     
 }
+
+.flex-center-sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.text-Style{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-items: center;
+
+}
 .navbar{
     width: 100%;
     color: var(--black);
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: absolute;
     cursor: pointer;
     
@@ -22,25 +33,15 @@
     margin-left: 20px;
 
 }
-.navbar_links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-
-}
-.navbar_links > p{
+.flex-center-sb > p{
     font-size: 12px;
-    text-transform: uppercase;
     display: flex;
-    align-items: center;
     font-weight: 900;
     margin-right: 29px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
 
 }
-.navbar_links > p:first-child{
+.flex-center-sb > p:first-child{
     margin-left: 50px;
 
 }
@@ -49,19 +50,54 @@
     padding: 15px !important;
    
 }
+.burger_Nav,.burger_Nav_active{
+    display: none;
+}
+
 
 /* Generating the responsiveness on small screens */
 
-@media(max-width:1000px){
+@media(max-width:800px){
     .navbar_links{
         display: none;
     }
     .navbar{
         background-color: var(--black);
+        overflow-x: hidden;
     }
     .MuiIconButton-root{
         color: var(--white) !important;  
     
+    }
+    .burger_Nav{
+        display: none;
+    
+    }
+    .burger_Nav_active{
+        position: fixed;
+        inset:0;
+        background-color: var(--white);
+        width: 500px;
+        z-index: 100;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .burger_Nav_active> p {
+        padding: 30px;
+        border-bottom: 1px solid var(--gray) ;
+        font-weight: 600;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .burger_Nav_closeIcon{
+        display: flex;
+        justify-content: flex-end;
+        color: var(--black);
     }
 
 }
