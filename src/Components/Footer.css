@@ -1,0 +1,70 @@
+.footer{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-color: #EFEFEF;
+    padding-top: 300px;
+
+}
+
+.section1{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+
+}
+.section2{
+    background-color: #2a2a2a;
+    color: #EFEFEF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.section3{
+    background-color: #EFEFEF;
+    height: 30px;
+}
+
+.section1 >h1{
+    color: #EFEFEF;
+    font-size: 20px;
+    margin-right: 30px;
+    letter-spacing: 2px;
+}
+.section1 >button{
+    background-color: #EFEFEF;
+    padding: 10px 40px 8px 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #fff;
+    cursor: pointer;
+
+}
+.section2 > div > h3{
+    font-size: 14px ;
+    letter-spacing: 1px;
+   
+}
+.section2 > div > h3:hover{
+   text-decoration: underline;
+}
+.section2 > div > p:hover{
+    text-decoration: underline;
+ }
+ 
+
+.section2 > div > p{
+    font-size: 13px ;
+    letter-spacing: 1px;
+}
+
+.section3 > p{
+    font-size: 10px;
+    font-weight: bolder;
+   text-align: center;
+   margin-top: 13px;
+}

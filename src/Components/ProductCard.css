@@ -98,6 +98,13 @@
 }
 .size_Values{
     font-size: 12px;
+    font-weight: bolder;
+    margin-top: 15px;
+    transition: 600ms ease-in;
+}
+.size_Values{
+    font-size: 12px;
+    font-weight: bolder;
     margin-top: 15px;
     transition: 600ms ease-in;
 }
@@ -109,12 +116,9 @@
     cursor: pointer;
 }
 .size_Values >span:hover{
-    font-weight: bolder;
     transform: scale(1.08);
 
-
 }
-
 
 .colorPallete{
     border-radius: 50%;
@@ -138,7 +142,7 @@
 
 .price_Tag{
 
- margin-left: 70px;
+ margin-left: 120px;
  margin-top: 15px;
  color: var(--white);
  font-weight: bold;
