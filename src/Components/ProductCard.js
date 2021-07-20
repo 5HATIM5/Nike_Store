@@ -5,7 +5,7 @@ import StarOutlinedIcon from "@material-ui/icons/StarOutlined";
 import StarOutlineOutlinedIcon from "@material-ui/icons/StarOutlineOutlined";
 import Zoom from "react-reveal/Zoom";
 
-const ProductCard = ({ image,title }) => {
+const ProductCard = ({ image, title, price, collection, rating }) => {
   return (
     <div className="productCard">
       <div className="card_Imageblock">
@@ -18,13 +18,17 @@ const ProductCard = ({ image,title }) => {
       </div>
       <div className="card_Content">
         <h1>{title}</h1>
-        <h5>Running Collections</h5>
+        <h5>{collection}</h5>
         <div className="product_Stars">
-          <StarOutlinedIcon fontSize="small" />
-          <StarOutlinedIcon fontSize="small" />
+          {Array(rating)
+            .fill()
+            .map((_) => (
+              <StarOutlinedIcon fontSize="small" />
+            ))}
+          {/* <StarOutlinedIcon fontSize="small" />
           <StarOutlinedIcon fontSize="small" />
           <StarOutlineOutlinedIcon fontSize="small" />
-          <StarOutlineOutlinedIcon fontSize="small" />
+          <StarOutlineOutlinedIcon fontSize="small" /> */}
         </div>
         <h6>Size</h6>
         <div className="size_Values">
@@ -40,7 +44,7 @@ const ProductCard = ({ image,title }) => {
           <div className="colorPallete red"></div>
           <div className="colorPallete purple"></div>
           <div className="price_Tag">
-            <p>PKR 2,999</p>
+            <p>PKR {price}</p>
           </div>
         </div>
       </div>

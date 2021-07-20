@@ -94,7 +94,6 @@
         top: 0;
         bottom: 0;
         background-color: var(--white);
-        width: 500px;
         z-index: 100;
         padding: 20px;
         display: flex;
