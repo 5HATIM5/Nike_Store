@@ -19,13 +19,23 @@
     align-items: center;
 
 }
+
 .navbar{
     width: 100%;
     color: var(--black);
     padding: 10px;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     cursor: pointer;
+    transition-timing-function: ease-in;
+    transition: all 0.5s
+  
     
+}
+.nav_black{
+    background-color: #111;
+    color: white;
+    z-index: 1000;
 }
 .navbar_logo{
     width: 60px;
@@ -39,16 +49,23 @@
     display: flex;
     font-weight: 900;
     margin-right: 29px;
+    align-items: center;
 
 }
 .flex-center-sb > p:first-child{
     margin-left: 50px;
 
 }
-.MuiIconButton-root{
+/* .MuiIconButton-root{
     color: var(--black) !important;  
     padding: 15px !important;
    
+} */
+.navbar_icon{
+    color: var(--black);
+}
+.navbar_icon_white{
+    color: var(--white) ;
 }
 .burger_Nav,.burger_Nav_active{
     display: none;
@@ -64,10 +81,7 @@
     .navbar{
         background-color: var(--black);
         overflow-x: hidden;
-    }
-    .MuiIconButton-root{
-        color: var(--white) !important;  
-    
+        z-index: 1;
     }
     .burger_Nav{
         display: none;
@@ -75,7 +89,10 @@
     }
     .burger_Nav_active{
         position: fixed;
-        inset:0;
+        width: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
         background-color: var(--white);
         width: 500px;
         z-index: 100;
@@ -98,6 +115,9 @@
         display: flex;
         justify-content: flex-end;
         color: var(--black);
+    }
+    .navbar_icon{
+        color: var(--white);
     }
 
 }
