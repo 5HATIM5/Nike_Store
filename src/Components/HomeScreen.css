@@ -59,7 +59,13 @@
     width: 70px;
     object-fit: contain;
     margin-top: 10px;
+    transition: 200ms ease-in;
+    cursor: pointer;
 }
+.display_shoes_nike:hover{
+    transform: scale(1.08);
+}
+
 ._margin30{
     margin-left: 30px;
 

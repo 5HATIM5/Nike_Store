@@ -1,3 +1,15 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff; 
+    --gray:#cbcbcb;
+    --black: #000000;
+    --offwhite: #EFEFEF;
+    --seablue:#00CDEF;
+    --red:#ED482B;
+    --purple:#403F6D;
+    
+}
+
 .footer{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -42,7 +54,12 @@
     border-style: solid;
     border-color: #fff;
     cursor: pointer;
+    transition: 300ms ease-in;
 
+}
+.section1 >button:hover{
+    background-color: var(--black);
+    color: var(--white);
 }
 .section2 > div > h3{
     font-size: 14px ;

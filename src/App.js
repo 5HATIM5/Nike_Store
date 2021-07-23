@@ -11,9 +11,9 @@ const App = () => {
       <Navbar />
       {/* This is Home Screen */}
       <MainPage />
-
-      {/* <Banner/> */}
-
+      {/* This are Adds */}
+      <Banner/>
+      {/* This is footer */}
       <Footer/>
     </div>
   );
