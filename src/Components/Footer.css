@@ -68,3 +68,31 @@
    text-align: center;
    margin-top: 13px;
 }
+
+@media(max-width:768px){
+    .hid{
+        display: none;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .section2{
+        text-align: center;
+    }
+    .section1 >h1{
+        font-size: 15px;
+    }
+    .section1 >button{
+        padding: 8px 20px 8px 20px;
+        margin-top: 15px;
+    }
+    .section2 > div > h3{
+        font-size: 12px ;
+    }
+    .section2 > div > p{
+        font-size: 11px ;
+    }
+    .section3 > p{
+        font-size: 8px;
+    }
+}
