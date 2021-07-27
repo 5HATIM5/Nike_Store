@@ -22,6 +22,8 @@
 
 .productCard:hover{
     transform: scale(1.04);
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -35,8 +37,18 @@
     font-family: 'Montserrat', sans-serif;
     transition: 450ms ease-in;
     cursor: pointer;
-
-
+}
+.productCard_small{
+    background-color: var(--white);
+    width: 24vw;
+    height: 60vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    transition: 450ms ease-in;
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 .card_Imageblock{

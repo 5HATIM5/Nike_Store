@@ -20,7 +20,7 @@ const Footer = () => {
           <p>Sale</p>
         </div>
 
-        <div>
+        <div className="hid">
           <h3>Sports</h3>
           <p>Soccer</p>
           <p>Running</p>
@@ -31,7 +31,7 @@ const Footer = () => {
           <p>Golf</p>
         </div>
 
-        <div>
+        <div className="hid">
           <h3>Collections</h3>
           <p>Air Force</p>
           <p>Air Max</p>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./FeaturedComponent.css";
 import pcard1 from "../Assets/pcard1.png";
 import pcard2 from "../Assets/pcard2.png";
@@ -20,6 +19,7 @@ const FeaturedComponent = () => {
           collection="Running Collections"
           price="18,000"
           rating={4}
+          details="show"
         />
         <ProductCard
           image={pcard3}
@@ -27,7 +27,7 @@ const FeaturedComponent = () => {
           collection="Running Collections"
           price="12,500"
           rating={5}
-
+          details="show"
         />
         <ProductCard
           image={pcard2}
@@ -35,7 +35,7 @@ const FeaturedComponent = () => {
           collection="Retro Design"
           price="17,999"
           rating={4}
-
+          details="show"
         />
       </div>
     </div>

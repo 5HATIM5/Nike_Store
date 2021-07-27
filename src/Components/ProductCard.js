@@ -1,13 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 import logo from "../Assets/logo.png";
 import "./ProductCard.css";
 import StarOutlinedIcon from "@material-ui/icons/StarOutlined";
-import StarOutlineOutlinedIcon from "@material-ui/icons/StarOutlineOutlined";
 import Zoom from "react-reveal/Zoom";
 
-const ProductCard = ({ image, title, price, collection, rating }) => {
+const ProductCard = ({ image, title, price, collection, rating,details,height }) => {
+ 
+  const [cardheight, setcardheight] = useState("small")
   return (
-    <div className="productCard">
+    <div className={`productCard ${cardheight===height && "productCard_small"}`}>
       <div className="card_Imageblock">
         <img src={logo} className="card_logo" alt="Nike" />
         <Zoom>
@@ -30,23 +31,29 @@ const ProductCard = ({ image, title, price, collection, rating }) => {
           <StarOutlineOutlinedIcon fontSize="small" />
           <StarOutlineOutlinedIcon fontSize="small" /> */}
         </div>
-        <h6>Size</h6>
-        <div className="size_Values">
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-        </div>
-        <h6>Color</h6>
-        <div className="color_Values">
-          <div className="colorPallete seablue"></div>
-          <div className="colorPallete red"></div>
-          <div className="colorPallete purple"></div>
-          <div className="price_Tag">
-            <p>PKR {price}</p>
+        {
+          details ==='show'? 
+          <>
+          <h6>Size</h6>
+          <div className="size_Values">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
           </div>
-        </div>
+          <h6>Color</h6>
+          <div className="color_Values">
+            <div className="colorPallete seablue"></div>
+            <div className="colorPallete red"></div>
+            <div className="colorPallete purple"></div>
+            <div className="price_Tag">
+              <p>PKR {price}</p>
+            </div>
+          </div></>
+          :null
+        }
+        
       </div>
     </div>
   );

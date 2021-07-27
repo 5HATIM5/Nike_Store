@@ -1,11 +1,11 @@
 import React from 'react'
-import spacejam from "../Assets/spacejam.jpg";
 import './Banner.css'
 
 
-const Banner = () => {
+const Banner = ({image}) => {
     return (
         <div className="banner">
+            <img className="banner_img" src={image} alt=''/>
         </div>
     )
 }
