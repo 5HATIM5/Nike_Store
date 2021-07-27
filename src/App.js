@@ -3,17 +3,15 @@ import MainPage from "./Components/MainPage";
 import Navbar from "./Components/Navbar";
 import Banner from "./Components/Banner";
 import Footer from "./Components/Footer";
+import Shop from "./Components/Shop";
 
 const App = () => {
   return (
     <div className="app">
-      {/* This is Navigation Bar */}
       <Navbar />
-      {/* This is Home Screen */}
+
       <MainPage />
-      {/* This are Adds */}
-      <Banner/>
-      {/* This is footer */}
+
       <Footer/>
     </div>
   );
