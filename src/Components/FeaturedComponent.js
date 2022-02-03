@@ -14,6 +14,8 @@ const FeaturedComponent = () => {
       </Fade>
       <div className="poduct_cards">
         <ProductCard
+        
+          key={1}
           image={pcard1}
           title="Air Zoom 700"
           collection="Running Collections"
@@ -22,6 +24,7 @@ const FeaturedComponent = () => {
           details="show"
         />
         <ProductCard
+          key={2}
           image={pcard3}
           title="Air Max 270"
           collection="Running Collections"
@@ -30,6 +33,7 @@ const FeaturedComponent = () => {
           details="show"
         />
         <ProductCard
+          key={3}
           image={pcard2}
           title="AirJordan Retro 1"
           collection="Retro Design"

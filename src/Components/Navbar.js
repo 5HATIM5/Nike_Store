@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import logo from "../Assets/logo.png";
 import { IconButton } from "@material-ui/core";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
-import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import AppsOutlinedIcon from "@material-ui/icons/AppsOutlined";
 import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 import CloseOutlinedIcon from "@material-ui/icons/CloseOutlined";
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import Fade from "react-reveal/Fade";
+import {Link} from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -15,14 +16,11 @@ const Navbar = () => {
   const [show, handleShow] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener("scroll", () => setTimeout(function () {
       if (window.scrollY > 100) {
         handleShow(true);
       } else handleShow(false);
-    });
-    return () => {
-      window.addEventListener("scoll");
-    };
+    }));
   }, []);
 
   return (
@@ -53,15 +51,18 @@ const Navbar = () => {
             fontSize="small"
           />
         </IconButton>
-        <IconButton>
-          <SearchOutlinedIcon
-            className={`navbar_icon ${show && "navbar_icon_white"}`}
-            fontSize="small"
-          />
-        </IconButton>
-        <IconButton>
+
+        <Link to={'/login'}>
+          <IconButton>
+            <PermIdentityIcon
+              className={`navbar_icon ${show && "navbar_icon_white"}`}
+              fontSize="small"
+            />
+          </IconButton>
+        </Link>
+
+        <IconButton onClick={() => setBurgerStatus(true)}>
           <AppsOutlinedIcon
-            onClick={() => setBurgerStatus(true)}
             fontSize="small"
             className={`navbar_icon ${show && "navbar_icon_white"}`}
           />
@@ -69,10 +70,10 @@ const Navbar = () => {
         <Fade right>
           <div className={burgerStatus ? "burger_Nav_active " : "burger_Nav"}>
             <div className="burger_Nav_closeIcon">
-              <IconButton>
+              <IconButton onClick={() => setBurgerStatus(false)}>
                 <CloseOutlinedIcon
                   style={{ color: "#000000" }}
-                  onClick={() => setBurgerStatus(false)}
+
                 />
               </IconButton>
             </div>

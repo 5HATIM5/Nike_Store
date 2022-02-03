@@ -1,19 +1,27 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import MainPage from "./Components/MainPage";
 import Navbar from "./Components/Navbar";
-import Banner from "./Components/Banner";
 import Footer from "./Components/Footer";
-import Shop from "./Components/Shop";
+import Login from "./Components/Login";
+import { useEffect } from "react";
 
 const App = () => {
+
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
+
   return (
-    <div className="app">
-      <Navbar />
-
-      <MainPage />
-
-      <Footer/>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route exact path="/shop" element={[<Navbar />, <Footer />]} />
+          <Route exact path="/login" element={[<Login />]} />
+          <Route exact path="/" element={[<Navbar />, <MainPage />, <Footer />]} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
