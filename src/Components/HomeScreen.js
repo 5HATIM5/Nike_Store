@@ -8,11 +8,12 @@ import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 import "./HomeScreen.css";
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import {Link} from 'react-router-dom';
 
 const HomeScreen = () => {
-    return (
-        <div className="homeScreen">
-             <div className="radial">
+  return (
+    <div className="homeScreen">
+      <div className="radial">
         <div className="homeScreen_radial">
           <Zoom>
             <div>
@@ -31,19 +32,21 @@ const HomeScreen = () => {
             similique unde sit ut, iusto commodi nemo fuga repellendus aliquid
             fugit veritatis vitae.
           </p>
-          <button className="button_Shopnow">SHOP NOW</button>
-        <div className="display_shoes">
-        <img src={s1} className="display_shoes_nike " alt="Nike shoe" />
-        <img src={s2} className="display_shoes_nike _margin30" alt="Nike shoe" />
-        <img src={s3} className="display_shoes_nike _margin30" alt="Nike shoe" />
-        <ArrowForwardIcon className="forward_arrow _margin30" fontSize="large"/>
-        </div>
+          <Link to={'/shop'} >
+            <button className="button_Shopnow">SHOP NOW</button>
+          </Link>
+          <div className="display_shoes">
+            <img src={s1} className="display_shoes_nike " alt="Nike shoe" />
+            <img src={s2} className="display_shoes_nike _margin30" alt="Nike shoe" />
+            <img src={s3} className="display_shoes_nike _margin30" alt="Nike shoe" />
+            <ArrowForwardIcon className="forward_arrow _margin30" fontSize="large" />
+          </div>
         </Fade>
       </div>
 
       <ExpandMoreOutlinedIcon className="arrow" fontSize="large" />
-        </div>
-    )
+    </div>
+  )
 }
 
 export default HomeScreen

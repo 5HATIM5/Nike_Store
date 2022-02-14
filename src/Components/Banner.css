@@ -1,23 +1,21 @@
 :root {
-    --blue: #1e90ff;
-    --white: #ffffff; 
-    --gray:#cbcbcb;
-    --black: #000000;
-    --offwhite: #EFEFEF;
-    --seablue:#00CDEF;
-    --red:#ED482B;
-    --purple:#403F6D;
-    
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --gray: #cbcbcb;
+  --black: #000000;
+  --offwhite: #efefef;
+  --seablue: #00cdef;
+  --red: #ed482b;
+  --purple: #403f6d;
 }
-.banner{
-    display: flex;
-    justify-content: center;
-
+.banner {
+  display: flex;
+  justify-content: center;
 }
 
-.banner_img{
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-    margin-top: 10p;
+.banner_img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: 50px;
 }

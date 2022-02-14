@@ -1,0 +1,29 @@
+.BestSelling {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.BestSelling_list {
+  width: 102%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+
+.headings > h1 {
+  padding-top: 80px;
+  letter-spacing: 3px;
+}
+.products {
+  display: flex;
+  padding: 15px;
+  margin-top: 15px;
+  overflow-x: scroll;
+}
+
+.BestSelling_list::-webkit-scrollbar {
+  display: none;
+}

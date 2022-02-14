@@ -1,26 +1,26 @@
 import React from "react";
 import HomeScreen from "./HomeScreen";
 import FeaturedProduct from "./FeaturedComponent";
-import Shop from "./Shop";
 import Banner from "./Banner";
 import banner from "../Assets/banner.PNG";
 import spacejam from "../Assets/spacejam.jpg";
-import { requests, header } from "./requests";
+import { brands_logo_req } from "./requests";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import Brands from "./Brands";
+import BestSelling from "./BestSelling";
+
 
 const MainPage = () => {
 
-  const [shoes, setShoes] = useState([]);
+  const [logos, setLogo] = useState([]);
+
 
   useEffect(() => {
 
-    // axios.get(requests.fetchShoes, {
-    //   headers: header
-    // })
-    //   .then(function (response) {
-    //     setShoes(response.data.results);
-    //   })
+    const set_logos = async () => {
+      return setLogo(brands_logo_req);
+    }
+    set_logos();
   }, []);
 
 
@@ -32,9 +32,16 @@ const MainPage = () => {
 
       <Banner image={spacejam} />
 
-      <Shop />
+      <BestSelling />
 
       <Banner image={banner} />
+
+      {
+        <Brands
+          logos={logos}
+        />
+      }
+
     </div>
   );
 };

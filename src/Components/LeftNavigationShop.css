@@ -1,0 +1,49 @@
+.LeftNavigationShop {
+  width: 15%;
+  height: 200vh;
+  background-color: #1c1c1c;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.brands > p > li {
+  margin-left: 50px;
+  font-size: 13px !important;
+  cursor: pointer;
+  display: flex;
+  margin-top: 10px;
+}
+
+.brands > p > li:hover {
+  text-decoration: underline;
+}
+
+.LeftNavigationShop > span {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.brands {
+  display: none;
+}
+
+.show {
+  display: block;
+  transition: transform 0.5ms ease-in;
+}
+
+.addicon:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: rotate(90deg);
+}

@@ -1,31 +1,26 @@
-.featuredComponent{
-    height: 100vh;
-    background-color: #EFEFEF;
-    
+.featuredComponent {
+  height: 100vh;
+  background-color: #efefef;
 }
-.featuredComponent > h1{
-    text-align: center;
-    padding-top: 80px;
-    letter-spacing: 3px;
- 
-
-
+.featuredComponent > h1 {
+  text-align: center;
+  padding-top: 80px;
+  letter-spacing: 3px;
 }
-.poduct_cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 15px;
-    padding: 15px;
+.poduct_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  padding: 15px;
 }
 
-@media(max-width:768px){
-    .poduct_cards{
-        flex-direction: column;
-    }
-    .featuredComponent{
-        height: 220vh;
-        background-color: #EFEFEF;
-        
-    }
+@media (max-width: 768px) {
+  .poduct_cards {
+    flex-direction: column;
+  }
+  .featuredComponent {
+    height: 220vh;
+    background-color: #efefef;
+  }
 }
