@@ -1,0 +1,29 @@
+.brands_logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo_img {
+  height: 100px;
+  object-fit: contain;
+  margin: 40px;
+  cursor: pointer;
+  transition: 200ms ease-in;
+}
+.logo_img:hover {
+  opacity: 0.5;
+}
+
+.brands_heading {
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 3px;
+}
+
+/* Generating the responsiveness on small screens */
+@media(max-width:768px){
+
+  .brands_logo{
+    overflow-x: hidden;
+  }
+}

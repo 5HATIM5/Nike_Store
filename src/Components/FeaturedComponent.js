@@ -2,7 +2,6 @@ import "./FeaturedComponent.css";
 import pcard1 from "../Assets/pcard1.png";
 import pcard2 from "../Assets/pcard2.png";
 import pcard3 from "../Assets/pcard3.png";
-
 import Fade from "react-reveal/Fade";
 
 import ProductCard from "./ProductCard";

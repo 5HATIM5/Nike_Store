@@ -1,32 +1,19 @@
-
-.shop_head{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --gray: #cbcbcb;
+  --black: #000000;
+  --offwhite: #efefef;
+  --seablue: #00cdef;
+  --red: #ed482b;
+  --purple: #403f6d;
 }
-.shop{
-        width: 102%;
-        display: flex;
-        /* justify-content: center; */
-        align-items: center;
-        flex-direction: column;
-        overflow-x: scroll;
- 
-
+.shop {
+  height: 100%;
 }
 
-.headings > h1{
-        padding-top: 80px;
-        letter-spacing: 3px;
-     
-}
-.products{
-        display: flex;
-        padding: 15px;
-        margin-top: 15px;
-        overflow-x: scroll;
+.shop_Banner {
+  width: 100%;
+  margin-top: 63px;
 }
 
-.shop::-webkit-scrollbar {
-        display: none;
-}

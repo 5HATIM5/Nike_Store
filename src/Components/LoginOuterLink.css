@@ -1,0 +1,59 @@
+.loginOuterLink {
+  width: 60%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.sm-logo {
+  height: 20px;
+  object-fit: contain;
+}
+
+.other_log_opt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other_log_opt > span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.loginOuterLink > span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+  cursor: pointer;
+  font-size: 11px;
+  display: inline-block;
+  position: relative;
+}
+
+.other_log_opt > span::after,
+.loginOuterLink > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  margin-top: 1px;
+}
+
+.other_log_opt > span:hover::after,
+.loginOuterLink > span:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  margin-top: 1px;
+}
