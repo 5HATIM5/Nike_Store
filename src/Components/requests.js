@@ -1,7 +1,7 @@
 
 const requests = {
-    fetchShoes: `https://the-sneaker-database.p.rapidapi.com/sneakers/52b284fd-d828-4f87-a721-e5aff3c25871`,
-    fetchBrands: `https://v1-sneakers.p.rapidapi.com/v1/brands`
+    fetchShoes: `https://the-sneaker-database.p.rapidapi.com/sneakers?limit=12&brand=nike`,
+    fetchBrands: `https://the-sneaker-database.p.rapidapi.com/brands`
 }
 
 const brands_logo_req = [
@@ -23,13 +23,19 @@ const brands_logo_req = [
     }
 ]
 
+const gendars = ['male', 'female']
+
+const sports = ['Running', 'Basketball', 'Football', 'Cricket', 'Gymnastic', 'Tennis', 'Swimming', 'SkateBoarding', 'SnowBoarding', 'Rugby', 'Golf']
+
 const header = {
-    'x-rapidapi-host': 'v1-sneakers.p.rapidapi.com',
-    'x-rapidapi-key': 'df60355ef1msh131ba1106c5b1e2p10e672jsnd5427ae3ef48'
+    'x-rapidapi-host': 'the-sneaker-database.p.rapidapi.com',
+    'x-rapidapi-key': '96ef244745msha6fa766fc6885acp1a2269jsnf3b4e60a9750'
 }
 
 export {
     requests,
     header,
-    brands_logo_req
+    brands_logo_req,
+    gendars,
+    sports
 }

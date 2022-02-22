@@ -1,0 +1,25 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --gray: #cbcbcb;
+  --black: #000000;
+  --offwhite: #efefef;
+  --seablue: #00cdef;
+  --red: #ed482b;
+  --purple: #403f6d;
+}
+.shop {
+  height: 100%;
+}
+
+.shop_Banner {
+  width: 100%;
+}
+
+.shop_area {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+
+}

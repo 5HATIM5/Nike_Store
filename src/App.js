@@ -1,10 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import MainPage from "./Components/MainPage";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import LoginWizard from "./Components/LoginWizard";
-import Shop from "./Components/Shop";
+import MainPage from "./Components/Home/HomeComponents/MainPage";
+import Navbar from "./Components/Global/GlobalComponents/Navbar";
+import Footer from "./Components/Global/GlobalComponents/Footer";
+import LoginWizard from "./Components/Auth/AuthComponents/LoginWizard";
+import Shop from "./Components/Shop/ShopComponents/Shop";
 
 import { useEffect } from "react";
 
