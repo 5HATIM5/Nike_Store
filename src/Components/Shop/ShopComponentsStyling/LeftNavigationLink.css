@@ -1,0 +1,32 @@
+.Sidebar_links > span {
+  margin-left: 40px;
+  margin-top: 15px;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.brands {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.brands > p > li {
+  margin-left: 50px;
+  font-size: 13px !important;
+  cursor: pointer;
+  display: flex;
+  margin-top: 10px;
+}
+
+.brands > p > li:hover {
+  text-decoration: underline;
+}
+
+.brands {
+  display: none;
+}
+
+.show {
+  display: block;
+}

@@ -1,0 +1,121 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --gray: #cbcbcb;
+  --black: #000000;
+}
+
+.black-cl {
+  color: var(--black);
+}
+.flex-center-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-Style {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  cursor: pointer;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.Link {
+  text-decoration: none;
+}
+
+.nav_black {
+  background-color: #111;
+  z-index: 1000;
+}
+.navbar_logo {
+  width: 60px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.bubble {
+  background-color: rgba(246, 189, 55, 1);
+  border-radius: 50%;
+  height: 15px;
+  padding: 2px;
+  font-weight: bolder;
+  width: 15px;
+  position: absolute;
+  margin-bottom: 18px;
+  margin-left: 20px;
+  font-size: 10px;
+}
+
+.flex-center-sb > .Link > p {
+  font-size: 12px;
+  display: flex;
+  font-weight: 900;
+  margin-right: 29px;
+  align-items: center;
+}
+
+.navbar_icon {
+  color: var(--black);
+}
+.navbar_icon_white {
+  color: var(--white);
+}
+.burger_Nav,
+.burger_Nav_active {
+  display: none;
+}
+
+/* Generating the responsiveness on small screens */
+
+@media (max-width: 800px) {
+  .navbar_links {
+    display: none;
+  }
+  .navbar {
+    background-color: var(--black);
+    overflow-x: hidden;
+    z-index: 1;
+  }
+  .burger_Nav {
+    display: none;
+  }
+  .burger_Nav_active {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--white);
+    z-index: 100;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .burger_Nav_active > p {
+    padding: 30px;
+    border-bottom: 1px solid var(--gray);
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .burger_Nav_closeIcon {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--black);
+  }
+  .navbar_icon {
+    color: var(--white);
+  }
+}

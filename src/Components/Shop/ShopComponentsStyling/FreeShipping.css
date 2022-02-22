@@ -1,0 +1,19 @@
+.freeShipping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  height: 8vh;
+  margin-top: 9vh;
+}
+
+.freeShipping > p {
+  font-size: 13px;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+.freeShipping > span {
+  font-size: 13px;
+  margin-left: 10x;
+}

@@ -1,0 +1,94 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.LeftNavigationShop {
+  width: 20%;
+  height: 100vh;
+  margin-bottom: 20px;
+  background-color: #1c1c1c;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(1px 10px 15px #1c1c1c);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow-x: hidden;
+}
+
+.addicon:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: rotate(90deg);
+}
+
+.super {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Box {
+  padding: 10px;
+}
+
+.nike_img {
+  cursor: pointer;
+  height: 20px;
+  object-fit: contain;
+}
+
+.jordan_img:hover,
+.rtfkt_img:hover,
+.nike_img:hover {
+  opacity: 1;
+  transition: 500ms all ease-in-out;
+}
+.jordan_img {
+  cursor: pointer;
+  height: 70px;
+  object-fit: contain;
+  opacity: 0.5;
+}
+.rtfkt_img {
+  cursor: pointer;
+  height: 80px;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+hr {
+  width: 100px;
+}
+.total_products {
+  padding: 15px;
+  margin-left: 30px;
+}
+.total_products > h1 {
+  font-size: 30px;
+}
+
+.total_products > h1 > span {
+  font-size: 18px;
+}
+.total_products > p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+.LeftNavigationShop{
+  display: none;
+}
+}
